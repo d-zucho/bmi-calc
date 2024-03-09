@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #345ff6;
+  --gunmetal: #253347;
+  --darkBlue: #5e6e85;
+  --borders: #d8e2e7;
+
+  /* font size */
+  --heading-xl: 64px;
+  --heading-lg: 48px;
+  --heading-md: 24px;
+  --heading-sm: 20px;
+
+  --body-md: 16px;
+  --body-sm: 14px;
+
+  /* border radius */
+  --borderRadius: 12px;
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary text-white w-[125px] rounded-md whitespace-nowrap;
+  }
+  .btn-secondary {
+    @apply bg-white border border-primary text-primary w-[125px] px-1 py-2  rounded-md whitespace-nowrap;
+  }
+}
+
+@layer utilities {
+  .flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
